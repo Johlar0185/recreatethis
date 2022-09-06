@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Mitr&display=swap");
+
+@font-face {
+  font-family: "raleway, sans-serif";
+  src: url("https://use.typekit.net/qrt6zzh.css");
+}
+
+:root {
+  --redBackground: #db524d;
+  --redOpague: #de6864;
+  --darkRed: #c94b46;
+  --darkestRed: #420609;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  width: 600px;
+  margin: 0 auto;
+  background-color: #db524d;
+  font-family: "raleway";
+  font-weight: bold;
+  gap: 1rem;
+  align-items: center;
+  border-bottom: solid var(--darkRed);
+}
+
+#headerOne {
+  color: white;
+  font-family: "raleway";
+  font-size: 18px;
+  margin-right: auto;
+}
+
+.headerButton {
+  color: white;
+  background: var(--redOpague);
+  text-align: center;
+  border: none;
+  border-radius: 5%;
+  padding: 0.5rem 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  cursor: pointer;
+}
+
+.headerButton:hover {
+  background: var(--redBackground);
+  border: solid white;
+}
+
+.headerButton span {
+  padding-top: 3px;
+}
+
+body {
+  background-color: var(--redBackground);
+}
+
+#firstSection {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 0 auto;
+  justify-content: center;
+  background-color: var(--redBackground);
+  margin-bottom: 40px;
+}
+
+#containerOne {
+  background-color: var(--redOpague);
+  margin-top: 30px;
+  border-radius: 5px;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-bottom: 2rem;
+}
+
+.btnTopCon {
+  background-color: transparent;
+  margin-top: 20px;
+  border: none;
+  color: white;
+  border-radius: 5%;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#containerOne button:first-child {
+  justify-self: end;
+}
+
+#containerOne button:nth-child(3) {
+  justify-self: start;
+}
+
+.btnTopCon:hover {
+  background: #db524d;
+}
+
+.clock {
+  align-items: center;
+  grid-column: 1/-1;
+  font-family: "Kosugi Maru";
+  font-size: 110px;
+  color: white;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+.startBtn {
+  grid-column: 1/-1;
+  margin-top: 2rem;
+  background-color: white;
+  color: var(--redBackground);
+  border-radius: 4px;
+  font-family: "raleway";
+  font-size: 20px;
+  padding: 0px 12px;
+  font-weight: bold;
+  box-shadow: rgb(235 235 235) 0px 6px 0px;
+  border: none;
+  width: 200px;
+  height: 55px;
+  cursor: pointer;
+}
+
+#topFive {
+  background-color: white;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+#containerTwo {
+  background-color: var(--redBackground);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  font-family: "raleway";
+}
+
+#containerTwo p:first-child {
+  font-size: 16px;
+  justify-self: center;
+  opacity: 0.6;
+  margin-bottom: 0;
+}
+
+#containerTwo p:nth-child(2) {
+  font-size: 18px;
+  margin-top: 0;
+  justify-self: center;
+}
+
+#containerThree {
+  background-color: none;
+  display: flex;
+  flex-direction: row;
+  align-items: space-around;
+}
+
+#containerThree p:first-child {
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  font-family: "raleway";
+}
+
+#containerThree span {
+  color: white;
+  align-self: flex-end;
+  margin-right: auto;
+  position: relative;
+}
+
+#containerFour {
+  background-color: none;
+  display: block;
+  margin: auto;
+}
+
+#btnAddTask {
+  width: 400px;
+  padding: 12px 0px;
+  border: dashed var(--redOpague);
+  background-color: var(--darkRed);
+  color: white;
+  border-radius: 5%;
+  padding: 1rem;
+  justify-items: center;
+  cursor: pointer;
+}
+
+#btnAddTask:hover {
+  background-color: var(--redBackground);
+}
+
+#btnAddTask span {
+  padding: 1rem;
+  font-weight: bold;
+  font: "raleway";
+  font-size: 16px;
+  opacity: 0.6;
+  padding-bottom: 10px;
+}
+
+#btnAddTask svg:first-child {
+  opacity: 0.6;
+}
+
+#wrapperWhite {
+  background-color: white;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+#whiteSection {
+  margin-top: 3em;
+  width: 500px;
+  font-family: "raleway";
+  color: var(--darkestRed);
+  line-height: 2em;
+}
+
+.lineClass:after {
+  content: "";
+  display: block;
+  width: 24px;
+  padding-top: 8px;
+  border-bottom: 4px solid #f05b56;
+  opacity: 0.6;
+}
+
+#whiteSection span {
+  color: var(--redBackground);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+footer {
+  display: block;
+  flex-direction: row;
+  margin: 0 auto;
+  background-color: white;
+  width: 100vw;
+  border-top: solid #f1f1f1;
+  height: 5em;
+}
