@@ -86,10 +86,12 @@ body {
   border-radius: 5%;
   font-size: 16px;
   cursor: pointer;
+  padding: 0.5em;
 }
 
 #containerOne button:first-child {
   justify-self: end;
+  background-color: var(--darkRed);
 }
 
 #containerOne button:nth-child(3) {
